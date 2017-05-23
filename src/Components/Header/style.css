@@ -1,10 +1,23 @@
 .header {
     display: flex;
-    font-size: 44px;
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     height: 200px;
     background-color: #414F5F;
     color: white;
+}
+
+.header__title {
+    font-size: 44px;
+}
+
+.header__info {
+    font-size: 18px;
+}
+
+
+.header__info-link {
+    color: white;
+    font-weight: 600;
 }
