@@ -1,0 +1,19 @@
+.ReactTable,
+.rt-table {
+    border-radius: 8px;
+}
+
+.rt-table {
+    /*border-radius: 8px;*/
+}
+
+.rt-thead.-header {
+    background-color: #414F5F;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.rt-tr-group {
+    padding: 6px;
+}

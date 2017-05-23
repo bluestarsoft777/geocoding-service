@@ -1,0 +1,49 @@
+.dropzone {
+    font-size: 22px;
+    font-weight: 300;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.13) 2px 2px 10px 0px;
+    box-shadow: inset rgba(0, 0, 0, 0.13) 2px 2px 10px 0px;
+    margin: 60px auto;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    background-color: #E8E8E8;
+    color: #C3C3C3;
+    transition: color, background-color 0.2s ease-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropzone--accept {
+    color: rgb(84, 191, 242);
+    background-color: rgba(159, 220, 249, 0.3);
+}
+
+.dropzone--reject {
+    color: #e31a1a;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.upload-icon {
+    width: 48px;
+    top: 50%;
+    top: calc(50% - 24px);
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    fill: #C3C3C3;
+    transition: fill 0.2s ease-out;
+}
+
+.dropzone--accept .upload-icon {
+    fill: rgb(84, 191, 242);
+}
+
+.dropzone--reject .upload-icon {
+    fill: red;
+}
