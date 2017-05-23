@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
 import UploadIcon from './UploadIcon';
-import {readJSON} from '../../utility/readFile';
+import { readJSON } from '../../utility/readFile';
 import './style.css';
 
 class FileDrop extends Component {
@@ -12,21 +12,21 @@ class FileDrop extends Component {
         };
     }
     handleDrop = (acceptedFiles, rejectedFiles) => {
-        const {onFileRead} = this.props;
+        const { onFileRead } = this.props;
 
         readJSON(acceptedFiles[0])
             .then(locations => {
-                onFileRead({locations});
-                this.setState({error: null});
+                onFileRead({ locations });
+                this.setState({ error: null });
             })
             .catch(error => {
                 console.error('error', error);
-                this.setState({error});
+                this.setState({ error });
             });
     };
 
     renderError() {
-        const {error} = this.props;
+        const { error } = this.props;
         if (!error) return null;
 
         return (
@@ -46,7 +46,6 @@ class FileDrop extends Component {
                     className="dropzone"
                     onDrop={this.handleDrop}
                     multiple={false}
-                    accept="application/json"
                     activeClassName="dropzone--accept"
                     rejectClassName="dropzone-reject"
                 >
