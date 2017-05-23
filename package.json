@@ -6,6 +6,8 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "axios": "^0.16.1",
+    "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-datasheet": "^1.2.5",
     "react-dom": "^15.5.4",
