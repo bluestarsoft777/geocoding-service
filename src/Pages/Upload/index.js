@@ -4,6 +4,8 @@ import FileDrop from '../../Components/FileDrop';
 import Header from '../../Components/Header';
 import Button from '../../Components/Button';
 import getLocation, {addCoordinatesToLocation} from '../../utility/getLocation';
+import phoneImage from './phone.png';
+import './style.css';
 
 class Upload extends Component {
     constructor(props) {
@@ -12,11 +14,6 @@ class Upload extends Component {
             locations: null,
             error: null
         };
-    }
-
-    renderContent(locations) {
-        if (!locations) return null;
-        return <Table data={locations} />;
     }
 
     getCoordinates = locationsData => {
@@ -52,7 +49,7 @@ class Upload extends Component {
 
         return (
             <div className="actions">
-                <Button onClick={e => this.clearLocations()}>
+                <Button blue onClick={e => this.clearLocations()}>
                     Upload locations again
                 </Button>
 
@@ -66,6 +63,17 @@ class Upload extends Component {
         );
     };
 
+    renderContent(locations) {
+        if (locations) return <Table data={locations} />;
+
+        return (
+            <div className="content">
+                <FileDrop onFileRead={this.handleLocationsRead} />
+                <img className="phone-picture" src={phoneImage} alt="image of phone with the geocoding app" />
+            </div>
+        );
+    }
+
     render() {
         const {locations} = this.state;
         const actions = this.renderActions(locations);
@@ -78,8 +86,6 @@ class Upload extends Component {
                 <div className="App-intro">
                     {actions}
                     {content}
-
-                    <FileDrop onFileRead={this.handleLocationsRead} />
                 </div>
             </div>
         );

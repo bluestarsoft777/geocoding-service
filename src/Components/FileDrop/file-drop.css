@@ -1,13 +1,40 @@
+.file-drop {
+    min-width: 460px;
+    margin: 0 auto;
+}
+
+.file-drop .button {
+    margin-bottom: 60px;
+}
+
+.file-drop__info {
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.file-drop__info--small {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 28px;
+}
+
+.file-drop__info-link {
+    color: #e74c3c;
+    /*font-weight: 600;*/
+}
+
 .dropzone {
     font-size: 22px;
-    font-weight: 300;
-    width: 400px;
+    font-weight: 500;
     height: 400px;
     padding: 20px;
     border-radius: 8px;
     -webkit-box-shadow: inset rgba(0, 0, 0, 0.13) 2px 2px 10px 0px;
     box-shadow: inset rgba(0, 0, 0, 0.13) 2px 2px 10px 0px;
-    margin: 60px auto;
     flex: 1;
     align-content: center;
     justify-content: center;

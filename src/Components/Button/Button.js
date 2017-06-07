@@ -1,9 +1,13 @@
 import React from 'react';
-import './style.css';
+import './button.css';
 
 const Button = props => {
+    const {fullWidth, blue} = props;
+    // const classes = props.fullWidth ? 'button button--full-width' : 'button';
+    const classes = `button ${fullWidth && 'button--full-width'} ${blue && 'button--blue'}`;
+
     return (
-        <button className="button" {...props}>
+        <button className={classes} {...props}>
             {props.children}
         </button>
     );

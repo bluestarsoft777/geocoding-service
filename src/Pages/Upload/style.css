@@ -1,0 +1,20 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+.content * {
+    flex: 1;
+}
+*/
+
+.phone-picture {
+    float: right;
+}

@@ -1,17 +1,25 @@
-.ReactTable,
+.ReactTable {
+    border-radius: 8px;
+    background-color: white;
+    border-width: 0;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
 .rt-table {
     border-radius: 8px;
 }
 
-.rt-table {
-    /*border-radius: 8px;*/
-}
-
 .rt-thead.-header {
-    background-color: #414F5F;
+    background-color: rgb(41, 60, 79);
     color: white;
+    font-weight: 500;
     text-transform: capitalize;
     padding: 10px;
+}
+
+.rt-tbody {
+    color: #767676;
 }
 
 .rt-tr-group {

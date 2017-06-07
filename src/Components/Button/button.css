@@ -1,11 +1,11 @@
 .button {
-    padding: 14px 18px;
+    padding: 16px 24px;
     -webkit-appearance: none;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-    background-color: #DF6856;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: #e74c3c;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -16,4 +16,16 @@
 
 .button:hover {
     background-color: #e7887a;
+}
+
+.button--full-width {
+    width: 100%;
+}
+
+.button--blue {
+    background-color: #2980b9;
+}
+
+.button--blue:hover {
+    background-color: #63a6d2;
 }
