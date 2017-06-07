@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="389px" height="68px" viewBox="0 0 389 68">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  font-style: italic;
+  font-weight: 700;
+  fill: rgb(236,240,241);
+}
+.style1 {
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  fill: rgb(219,219,219);
+}
+.style2 {
+  font-size: 5.06941px;
+  font-family: "BankGothicBT-Medium";
+  fill: rgb(231,76,60);
+}
+]]></style>
+<text transform="matrix(6.00,0.00,0.00,6.00,-3.32,50.25)"><tspan x="0.00 8.08 14.28 22.74 29.45 37.91 46.08 49.37 57.36" fill="rgb(235,239,241)" class="style0">GEOCODING</tspan><tspan x="65.44 67.98" fill="rgb(218,218,218)" class="style1"> </tspan><tspan y="2.94" x="0.00 0.87 2.88 5.42 7.20 9.64 10.83 13.07" fill="rgb(230,75,59)" class="style2"> service</tspan></text></svg>

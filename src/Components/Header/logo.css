@@ -1,0 +1,18 @@
+.logo {
+    display: inline-block;
+}
+
+.logo__title {
+    color: #ecf0f1;
+    font-size: 700;
+    font-style: italic;
+    display: block;
+    text-align: left;
+}
+
+.logo__subtitle {
+    color: #e74c3c;
+    font-size: 30px;
+    display: block;
+    text-align: left;
+}
