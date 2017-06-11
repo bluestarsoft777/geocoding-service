@@ -5,16 +5,14 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
+    width: 480px;
+    margin-left: 20%;
 }
-
-/*
-.content * {
-    flex: 1;
-}
-*/
 
 .phone-picture {
-    float: right;
+    /*float: right;*/
+    position: fixed;
+    bottom: -20px;
+    right: 20px;
+    z-index: -1;
 }

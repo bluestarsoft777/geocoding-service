@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background: #13659c;
     background: -webkit-linear-gradient(90deg, #13659c, #00165f);
     background: -moz-linear-gradient(90deg, #13659c, #00165f);
     background: -o-linear-gradient(90deg, #13659c, #00165f);
@@ -11,12 +12,8 @@ body {
     min-height: 100vh;
 }
 
-html, body {
-    /*background-color: #F2F2F2;*/
-}
-
 .App {
-    text-align: center;
+    padding-bottom: 20px;
 }
 
 .App-logo {
