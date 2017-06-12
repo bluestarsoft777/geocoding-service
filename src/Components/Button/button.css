@@ -35,8 +35,5 @@
 @media only screen and (min-device-width: 1600px) {
     .button--full-width {
         max-width: none;
-        /*max-width: 50%;*/
-        /*width: 480px;*/
-        /*margin-left: 20%;*/
     }
 }

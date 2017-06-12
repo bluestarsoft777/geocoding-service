@@ -83,7 +83,7 @@ class Upload extends Component {
 
         return (
             <div className="App">
-                <Header />
+                <Header locationsVisible={!!locations} />
 
                 <div>
                     {actions}

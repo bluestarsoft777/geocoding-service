@@ -25,6 +25,10 @@
         margin-bottom: 60px;
     }
 
+    .header.header--locations {
+        margin-left: 2.5%;
+    }
+
     .header__title {
         width: 400px;
         max-width: none;

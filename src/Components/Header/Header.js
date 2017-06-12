@@ -3,9 +3,11 @@ import './header.css';
 import './logo.css';
 import logo from '../../logo.png';
 
-const Header = () => {
+const Header = ({locationsVisible}) => {
+    const classNames = `header ${locationsVisible ? 'header--locations' : ''}`;
+
     return (
-        <header className="header">
+        <header className={classNames}>
             <h1 className="header__title">
                 <a href="/"><img className="header__logo" src={logo} /></a>
             </h1>
