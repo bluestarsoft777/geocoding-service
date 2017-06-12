@@ -69,7 +69,9 @@ class Upload extends Component {
         return (
             <div className="content">
                 <FileDrop onFileRead={this.handleLocationsRead} />
-                <img className="phone-picture" src={phoneImage} alt="image of phone with the geocoding app" />
+                <div className="phone-picture__container">
+                    <img className="phone-picture" src={phoneImage} alt="image of phone with the geocoding app" />
+                </div>
             </div>
         );
     }
@@ -83,7 +85,7 @@ class Upload extends Component {
             <div className="App">
                 <Header />
 
-                <div className="App-intro">
+                <div>
                     {actions}
                     {content}
                 </div>

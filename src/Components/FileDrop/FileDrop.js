@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
 import UploadIcon from './UploadIcon';
+import CorrectIcon from './CorrectIcon';
+import ErrorIcon from './ErrorIcon';
 import {readJSON} from '../../utility/readFile';
 import './file-drop.css';
 import Button from '../Button';
@@ -56,13 +58,16 @@ class FileDrop extends Component {
                 <Dropzone
                     ref={node => (this.dropzoneRef = node)}
                     className="dropzone"
+                    accepts=".json"
                     onDrop={this.handleDrop}
                     multiple={false}
                     activeClassName="dropzone--accept"
-                    rejectClassName="dropzone-reject"
+                    rejectClassName="dropzone--reject"
                 >
                     Drop a JSON file here
                     <UploadIcon />
+                    <CorrectIcon />
+                    <ErrorIcon />
                 </Dropzone>
 
                 <div className="file-drop__info file-drop__info--small">
