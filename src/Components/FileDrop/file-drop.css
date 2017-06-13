@@ -3,19 +3,19 @@
 }
 
 .file-drop .button {
-    margin-bottom: 60px;
+    margin-bottom: 2rem;
 }
 
 .file-drop__info {
-    font-size: 1.45rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: white;
-    padding-bottom: 50px;
+    margin-bottom: 2rem;
     text-align: left;
 }
 
 .file-drop__info--small {
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-align: center;
     font-weight: 300;
     margin-top: 28px;
@@ -102,7 +102,19 @@
     opacity: 1;
 }
 
+@media only screen and (min-device-width: 768px) {
+    .dropzone {
+        height: 320px;
+    }
+}
+
 @media only screen and (min-device-width: 1600px) {
+    .dropzone {
+        /*height: 420px;*/
+        height: 0;
+        padding-bottom: 80%;
+    }
+
     .dropzone, .file-drop__info--small {
         max-width: none;
     }
