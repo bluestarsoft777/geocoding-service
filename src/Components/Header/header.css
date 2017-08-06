@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .header {
         margin-left: 20%;
         margin-bottom: 1rem;
@@ -36,7 +36,7 @@
     }
 }
 
-/*@media only screen and (min-device-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
     .header__title {
         width: 400px;
         max-width: none;

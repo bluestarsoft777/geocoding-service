@@ -102,13 +102,13 @@
     opacity: 1;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
     .dropzone {
         height: 320px;
     }
 }
 
-@media only screen and (min-device-width: 1600px) {
+@media only screen and (min-width: 1600px) {
     .dropzone {
         /*height: 420px;*/
         height: 0;
@@ -120,7 +120,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1900px) {
+@media only screen and (min-width: 1900px) {
     .dropzone, .file-drop__info--small {
         height: 35vh;
     }

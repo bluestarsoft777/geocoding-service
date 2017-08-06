@@ -25,37 +25,37 @@ html {
     box-sizing: inherit;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
     /*html {
         font-size: 120%;
     }*/
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     html {
         font-size: 105%;
     }
 }
 
-@media only screen and (min-device-width: 1600px) {
+@media only screen and (min-width: 1600px) {
     html {
         font-size: 120%;
     }
 }
 
-@media only screen and (min-device-width: 1900px) {
+@media only screen and (min-width: 1900px) {
     html {
         font-size: 140%;
     }
 }
 
-@media only screen and (min-device-width: 2600px) {
+@media only screen and (min-width: 2600px) {
     html {
         font-size: 170%;
     }
 }
 
-@media only screen and (min-device-width: 3200px) {
+@media only screen and (min-width: 3200px) {
     html {
         font-size: 200%;
     }
